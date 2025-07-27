@@ -18,7 +18,7 @@ public class ApiPartidasApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("adivina-el-numero-production.up.railway.app", "https://adivina-el-numero-gamma.vercel.app", "http://localhost:5500", "http://127.0.0.1:5500") // Cambia el puerto si usas otro
+                        .allowedOrigins("api-partidas-production.up.railway.app","adivina-el-numero-production.up.railway.app", "https://adivina-el-numero-gamma.vercel.app", "http://localhost:5500", "http://127.0.0.1:5500") // Cambia el puerto si usas otro
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true)
